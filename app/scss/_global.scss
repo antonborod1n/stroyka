@@ -1,0 +1,12 @@
+body {
+    color: $default;
+    @extend %montserrat-400;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
