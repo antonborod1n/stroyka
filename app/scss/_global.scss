@@ -1,8 +1,20 @@
+html,
 body {
+    height: 100%;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
     color: $default;
     @extend %montserrat-400;
     font-size: 13px;
     line-height: 20px;
+}
+
+.main {
+    flex-grow: 1;
 }
 
 .container {

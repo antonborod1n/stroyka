@@ -203,13 +203,35 @@
     }
     &__item {
         margin-top: 10px;
+        color: $sub-accent;
+    }
+    &__item:hover {
+        color: #ffffff;
+        cursor: pointer;
+    }
+    &__social-item {
+        margin-left: 10px;
+    }
+    &__social-item:first-child {
+        margin-left: 0;
     }
     &__items {
         position: relative;
-        margin: 10px 0 0 35px;
+        margin: 0 0 10px 35px;
+        &-link {
+            color: #ffffff;
+        }
+    }
+    &__items:last-child {
+        margin-bottom: 0;
     }
     &__bottom {
         padding: 20px 0;
+    }
+    &__list-text {
+        @extend %montserrat-600;
+        margin-bottom: 20px;
+        text-transform: uppercase;
     }
     &__social-list {
         display: flex;
@@ -234,11 +256,9 @@
     }
 }
 
-
-
-
-
-
+.github__link {
+    color: coral;
+}
 
 
 @import 'media'; /* медиа-запросы */
