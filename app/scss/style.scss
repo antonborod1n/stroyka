@@ -185,6 +185,56 @@
 
 
 
+/* FOOTER */
+
+.footer {
+    background-color: $title;
+    color: #ffffff;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        padding: 100px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.05);;
+        &-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+    &__item {
+        margin-top: 10px;
+    }
+    &__items {
+        position: relative;
+        margin: 10px 0 0 35px;
+    }
+    &__bottom {
+        padding: 20px 0;
+    }
+    &__social-list {
+        display: flex;
+    }
+    &__local::before {
+        content: url(../images/icons/map.svg);
+        position: absolute;
+        top: 0;
+        left: -35px;
+    }
+    &__tel::before {
+        content: url(../images/icons/phone.svg);
+        position: absolute;
+        top: 3px;
+        left: -35px;
+    }
+    &__email::before {
+        content: url(../images/icons/at.svg);
+        position: absolute;
+        top: 2px;
+        left: -35px;
+    }
+}
+
+
 
 
 
