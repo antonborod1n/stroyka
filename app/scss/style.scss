@@ -221,15 +221,7 @@
         }
     }
     &__content {
-        max-width: 630px;
-        &-subtile {
-            display: inline-block;
-            font-size: 13px;
-            line-height: 20px;
-            color: $accent;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-        }
+        max-width: 630px;git
         &-title {
             margin-bottom: 43px;
         }
@@ -275,11 +267,51 @@
     }
 }
 
+/* BENEFITS */
 
+.benefits {
+    background: url(../images/dark-bg.jpg) top center fixed;
+    background-size: cover;
+    max-height: 376px;
+    padding: 100px 0;
+    &__inner {
+        display: flex;
+        justify-content: space-around;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 176px;
+        padding-right: 60px;
+        border-right: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    &__item:last-child {
+        border-right: none;
 
+    }
+    &__numb {
+        color: $accent;
+        font-size: 36px;
+        line-height: 36px;
+        margin-bottom: 30px;
+    }
+    &__desc {
+        font-size: 15px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+}
 
+/* PROGECT */
 
-
+.progect {
+    &__top {
+        padding: 100px 0;
+        text-align: center;
+    }
+}
 
 
 
