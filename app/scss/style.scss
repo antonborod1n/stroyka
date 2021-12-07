@@ -1,6 +1,7 @@
 @import 'vars'; /* Цвет */
 @import 'fonts'; /* Шрифты */
 @import 'reset'; /* Сброс */
+@import 'libs'; /* Файлы*/
 @import 'global'; /* Глобальные стили */
 
 
@@ -63,23 +64,20 @@
         padding: 20px 0;
     }
     &__content {
-        min-height: 300px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+        margin: 150px 0 20px;
         text-align: center;
-        margin-top: 100px;
         &-desc {
             @extend %montserrat-600;
             text-transform: uppercase;
             color: $accent;
+            margin-bottom: 20px;
         }
         &-title {
             @extend %montserrat-700;
             font-size: 40px;
             line-height: 46px;
             color: #ffffff;
+            margin-bottom: 50px;
         }
         &-link {
             position: relative;
@@ -94,7 +92,7 @@
             &::after {
                 content: url(../images/icons/arrow-white-btn.svg);
                 position: absolute;
-                top: 12px;
+                top: 10px;
                 right: 20px;
             }
         }
@@ -156,7 +154,6 @@
             color: $accent; 
         }
     }
-
 }
 
 .logo {
@@ -181,6 +178,112 @@
         background: $accent;
     }
 }
+
+
+/* EXPIRIENS */
+
+.expiriens {
+    padding: 100px 0;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img {
+        position: relative;
+        &-box {
+            margin-left: 50px;
+        }
+    }
+    &__info {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: $title;
+        width: 170px;
+        height: 195px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        left: 0;
+        bottom: 60px;
+        &-year {
+            text-transform: uppercase;
+            color: $accent;
+            font-size: 60px;
+            line-height: 60px;
+        }
+        &-desc {
+            max-width: 94px;
+            font-size: 13px;
+            line-height: 20px;
+            color: $sub-accent;
+        }
+    }
+    &__content {
+        max-width: 630px;
+        &-subtile {
+            display: inline-block;
+            font-size: 13px;
+            line-height: 20px;
+            color: $accent;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        &-title {
+            margin-bottom: 43px;
+        }
+        &-text {
+            margin-bottom: 43px;
+        }
+        &-list {
+            column-count: 2;
+            margin: 0 0 23px 28px;
+        }
+        &-item{
+            position: relative;
+            color: $title;
+            font-size: 15px;
+            line-height: 20px;
+            margin-bottom: 30px;
+        }
+        &-item::before {
+            content: url(../images/icons/ok.svg);
+            position: absolute;
+            top: 0;
+            left: -20px;
+         }
+        &-btn {
+            position: relative;
+            background-color: $accent;
+            padding: 15px 48px 15px 30px;
+            border-radius: 5px;
+            font-size: 13px;
+            line-height: 47px;
+            color: #FFFFFF;
+            &::before{
+                content: url(../images/icons/arrow-white-btn.svg);
+                position: absolute;
+                top: 2px;
+                right: 20px;
+            }
+            &:hover {
+                background-color: $title;
+                transition: all .3s;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
