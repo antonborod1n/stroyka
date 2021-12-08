@@ -311,6 +311,10 @@
         padding: 100px 0;
         text-align: center;
     }
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 
