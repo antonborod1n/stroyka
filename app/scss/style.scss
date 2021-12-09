@@ -160,25 +160,24 @@
     flex-grow: 1;
 }
 
-.social__item + .social__item {
-    margin-left: 5px;
-}
-
-.social__list {
-    display: flex;
-}
-
-.social__link {
-    display: inline-block;
-    background: rgba(255,255,255,0.15);
-    padding: 10px;
-    border-radius: 50%;
-    transition: all 0.3s;
-    &:hover {
-        background: $accent;
+.social {
+    &__item + .social__item {
+        margin-left: 5px;
+    }
+    &__list {
+        display: flex;
+    }
+    &__link {
+        display: inline-block;
+        background: rgba(255,255,255,0.15);
+        padding: 10px;
+        border-radius: 50%;
+        transition: all 0.3s;
+        &:hover {
+            background: $accent;
+        }
     }
 }
-
 
 /* EXPIRIENS */
 
@@ -307,20 +306,138 @@
 /* PROGECT */
 
 .progect {
+    padding: 100px 0;
     &__top {
-        padding: 100px 0;
+        margin-bottom: 41px;
         text-align: center;
     }
     &__content {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 30px;
+    }
+    &__item {
+        border-radius: 5px;
+        grid-column-start: span 2;
+        grid-row-start: span 2;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+    &__img {
+        border-radius: 5px 5px 0 0;
+    }
+    &__text {
+        color: $default;
+        margin: 0 0 15px 30px;
+    }
+    &__title {
+        font-size: 15px;
+        line-height: 20px;
+        color: $title;
+        flex-grow: 1;
+        margin: 25px 30px 15px 30px;
+    }
+    &__items {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 5px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        &-box {
+            position: relative;
+        }
+    }
+    &__data {
+        position: absolute;
+        bottom: 0;
+        left: 30px;
+        background: $accent;
+        padding: 0 20px;
+        border-radius: 5px 5px 0px 0px;
+        font-size: 12px;
+        line-height: 36px;
+        color: #ffffff;
+    }
+    &__link {
+        color: $accent;
+        position: relative;
+        margin: 0 30px 20px;
+        &::after {
+            content: url(../images/icons/arrow-orange.svg);
+            position: absolute;
+            top: 2px;
+            left: 73px;
+        }
+    }
+    &__bottom-link {
+        @extend %btn-orange;
+        &-box {
+            margin-top: 50px;
+            text-align: center;
+        }
     }
 }
 
+/* REVIEWS */
 
 
+.reviews {
+    background: url(../images/dark-bg.jpg) top center fixed;
+    background-size: cover;
+    padding: 100px 0;
+}
+.reviews__slider {
+    text-align: center;
+}
+.reviews__top-title {
+    margin-bottom: 44px;
+    color: #FFFFFF;
+}
+.reviews__text {
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto 30px;
+    font-size: 21px;
+    line-height: 32px;
+    color: $sub-accent;
+}
+.reviews__user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reviews__user-img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.reviews__user-name {
+    font-size: 15px;
+    color: $accent;
+}
+.reviews__user-job {
+    color: $default;
+}
 
 
+.slick-prev,
+.slick-next {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.slick-prev {
+    left: 0;
+}
+
+.slick-next {
+    right: 0;
+}
 
 
 
