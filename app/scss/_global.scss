@@ -30,6 +30,15 @@ body {
     color: $title;
 }
 
+.subtile {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 20px;
+    color: $accent;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
 
 /* SLIDER */
 
