@@ -13,4 +13,18 @@ $ (function(){
     });
 });
 
+$('.arrow-up').click(function () {
+    $('body,html').animate({ scrollTop: 0}, 800);
+});
+
+$(window).scroll(function() {
+    let scrolled = $(window).scrollTop();
+
+    if(scrolled > 350) {
+        $('.arrow-up').addClass('arrow-up--active');
+    } else {
+        $('.arrow-up').removeClass('arrow-up--active');
+    }
+});
+
 

@@ -68,3 +68,30 @@ body {
     height: 10px;
     border-radius: 5px;
 }
+
+/* ARROW */
+
+.arrow-up {
+    width: 50px;
+    height: 50px;
+    background-color: $accent;
+    border-radius: 5px;
+    position: fixed;
+    z-index: 1;
+    bottom: -100px;
+    right: 10px;
+    background-image: url(../images/icons/up-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+
+.arrow-up.arrow-up--active {
+    bottom: 20px;
+    transition: 0.5s linear;
+}
+
+.arrow-up--active:hover {
+    background-color: #FF8E47;
+}
