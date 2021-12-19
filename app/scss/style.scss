@@ -418,7 +418,6 @@
 
 /* REVIEWS */
 
-
 .reviews {
     background: url(../images/dark-bg.jpg) top center fixed;
     background-size: cover;
@@ -578,6 +577,106 @@
 .github__link {
     color: coral;
 }
+
+/* PAGE */
+
+.header__page-bg {    
+    background-image: url(../images/header-page.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    min-height: 253px;
+}
+
+.breadcrumbs {
+    background-color: $accent;
+    padding: 10px 0;
+    &__list {
+        display: flex;
+        list-style-type: none;
+    }
+    &__item {
+        color: #ffffff;
+        padding-right: 40px;
+        position: relative;
+        &::after {
+            content: url(../images/icons/arrow-white-btn.svg);
+            position: absolute;
+            top: 2px;
+            right: 13px;
+        }
+        &:last-child {
+            color: $title;
+            padding-right: 0;
+            &::after {
+                display: none;
+            }
+        }
+    }
+    &__link {
+        font-size: 11px;
+        line-height: 20px;
+        color: inherit;
+    }
+}
+
+/* SERVICES */
+
+.services {
+    padding: 100px 0;
+}
+
+.services__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 43px 33px;
+}
+
+.services__subtitle,
+.services__title {
+    text-align: center;
+    display: block;
+}
+
+.services__title {
+    margin-bottom: 40px;
+}
+
+.services__inner-title {
+    font-size: 15px;
+    line-height: 20px;
+    color: $title;
+    margin-bottom: 23px;
+    text-transform: uppercase;
+}
+
+.services__inner-text {
+    color: $default;
+    max-width: 292px;
+    margin-left: 75px;
+}
+
+.services__inner-img {
+    padding-top: 5px;
+    display: inline;
+    position: absolute;
+}
+
+.services__bottom-link {
+    @extend %btn-orange;
+    &-box {
+        margin-top: 50px;
+        text-align: center;
+    }
+}
+
+.services__bottom-link-box { 
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+
 
 
 @import 'media'; /* медиа-запросы */
