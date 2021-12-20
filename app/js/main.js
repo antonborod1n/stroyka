@@ -27,4 +27,16 @@ $(window).scroll(function() {
     }
 });
 
+$(document).ready(function() {
+    $('.question__title').click(function(event) {
+        if($('.question__inner').hasClass('question__one')){
+            $('.question__title').not($(this)).removeClass('active');
+            $('.question__text').not($(this).next()).slideUp(200);
+        }
+        $(this).toggleClass('active').next().slideToggle(200);
+    });
+});
+
+
+
 

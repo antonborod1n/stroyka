@@ -679,4 +679,121 @@
 
 
 
+
+
+
+.question {
+    padding: 100px 0;
+}
+
+.question__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    column-gap: 50px;
+}
+
+.question__item {
+    margin-bottom: 20px;
+}
+
+.question__title {
+    padding: 15px 25px;
+    background-color: #F8F8F8;
+    font-size: 15px;
+    line-height: 20px;
+    color: $title;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.question__title:hover {
+    color: #FFFFFF;
+    background-color: $accent;
+} 
+
+.question__title.active {
+    color: #ffffff;
+    background-color: $title;
+}
+
+.question__text {
+    display: none;
+    background-color: #FFFFFF;
+    font-size: 13px;
+    line-height: 20px;
+    color: $default;
+}
+
+.question__text {
+    border: 1px solid $title;
+    border-top: none;
+}
+
+.question__text p {
+    padding: 10px 25px;
+}
+
+.sitebar__searche,
+.sitebar__category,
+.sitebar__news {
+    background-color: $title;
+    width: 350px;
+    min-height: 180px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+
+.sitebar__subtitle {
+    font-size: 17px;
+    line-height: 20px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.sitebar__searche,
+.sitebar__category,
+.sitebar__news {
+    padding: 40px 50px;
+}
+
+.sitebar__news {
+    margin-bottom: 0;
+}
+
+.sitebar__news-subtitle {
+    color: $sub-accent;
+    margin-bottom: 13px;
+}
+
+.sitebar__news-subtitle:first-child {
+    margin-top: 0;
+}
+
+.sitebar__news-item {
+    border-bottom: 1px solid $default;
+    margin-bottom: 25px;
+}
+
+.sitebar__news-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.sitebar__news-time:last-child {
+    padding-bottom: 0;
+}
+
+.sitebar__news-time {
+    position: relative;
+    margin-left: 27px;
+    padding-bottom: 29px;
+}
+
+.sitebar__news-time time::before {
+    position: absolute;
+    content: url(../images/icons/clock.svg);
+    top: 0;
+    left: -27px;
+}
+
 @import 'media'; /* медиа-запросы */
