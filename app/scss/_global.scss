@@ -95,3 +95,9 @@ body {
 .arrow-up--active:hover {
     background-color: #FF8E47;
 }
+
+.page__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    column-gap: 50px;
+}
