@@ -862,12 +862,91 @@
 
 
 
+/* PAGE */
+/* CONTACT */
+
+
+.contact {
+    padding: 100px 0;
+}
+
+.contact__connection {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__form {
+    flex-basis: 550px;
+    display: inline;
+}
+
+.contact__form-item {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 30px;
+    background-color: #ededed;
+    border: none;
+    border-radius: 5px;
+    outline-color: $accent;
+    padding: 15px 15px 15px 50px;
+}
+
+.contact__form-item::placeholder {
+    color: $default;
+}
+
+.contact__title {
+    margin-bottom: 40px;
+}
+
+.contact__form-item:nth-child(3),
+.contact__form-item:nth-child(4) {
+    display: inline;
+    width: 260px;
+}
+
+.contact__form-item:nth-child(3) {
+    margin-right: 26px;
+}
+
+.contact__form-item-checkbox {
+    margin-bottom: 30px;
+}
+
+.contact__form-item-checkbox-span {
+    font-size: 13px;
+    line-height: 20px;
+    vertical-align: top;
+    color: $default;
+}
+
+.contact__form-item-btn {
+    background-color: $accent;
+    color: #FFFFFF;
+    height: 50px;
+    margin-bottom: 0;
+    font-size: 15px;
+    line-height: 46px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.contact__form-item-text {
+    height: 150px;
+}
 
 
 
 
 
 
+
+#map {
+    height: 550px;
+    width: 535px;
+    border-radius: 5px;
+}
 
 
 
