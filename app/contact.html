@@ -141,14 +141,15 @@
                         <form class="contact__form" action="#" method="post">
                             <span class="subtile">Контакты</span>
                             <h1 class="contact__title title">Обратная связь</h1>
-                            <input class="contact__form-item" type="text" placeholder="Ваше имя">
-                            <input class="contact__form-item" type="email" placeholder="Ваш e-mail">
-                            <input class="contact__form-item" type="text" placeholder="Тема сообщения">
-                            <input class="contact__form-item contact__form-item-text" type="text" placeholder="Текст сообщения">
-                            <input class="contact__form-item-checkbox" type="checkbox"><span
+                            <input class="contact__form-item contact__form-item-name" type="text" name="username" placeholder="Ваше имя">
+                            <input class="contact__form-item contact__form-item-email" type="email" name="email" placeholder="Ваш e-mail">
+                            <input class="contact__form-item contact__form-item-tem" type="text" name="massage" placeholder="Тема сообщения">
+                            <textarea class="contact__form-item contact__form-item-text" name="text"
+                                placeholder="Текст сообщения"></textarea>
+                            <input class="contact__form-item-checkbox" type="checkbox" name="check" required><span
                                 class="contact__form-item-checkbox-span">Я согласен(а) на обработку персональных
                                 данных</span>
-                            <input class="contact__form-item contact__form-item-btn" type="submit"
+                            <input class="contact__form-item contact__form-item-btn" type="submit" name="button"
                                 value="Отправить сообщение">
                         </form>
                         <div class="contact__map">

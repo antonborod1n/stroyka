@@ -896,6 +896,24 @@
     color: $default;
 }
 
+.contact__form-item-name {
+    background-image: url(../images/icons/user.svg);
+    background-repeat: no-repeat;
+    background-position: 20px 17px;
+}
+
+.contact__form-item-email {
+    background-image: url(../images/icons/envelope.svg);
+    background-repeat: no-repeat;
+    background-position: 20px 17px;
+}
+
+.contact__form-item-tem {
+    background-image: url(../images/icons/pen.svg);
+    background-repeat: no-repeat;
+    background-position: 20px 17px;
+}
+
 .contact__title {
     margin-bottom: 40px;
 }
@@ -934,6 +952,10 @@
 
 .contact__form-item-text {
     height: 150px;
+    resize: none;
+    background-image: url(../images/icons/commen.svg);
+    background-repeat: no-repeat;
+    background-position: 20px 17px;
 }
 
 
