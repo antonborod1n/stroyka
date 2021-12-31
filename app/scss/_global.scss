@@ -3,7 +3,6 @@ body {
     height: 100%;
 }
 
-
 body {
     display: flex;
     flex-direction: column;
@@ -39,27 +38,24 @@ body {
     margin-bottom: 10px;
 }
 
-
 /* SLIDER */
 
 .slick-dots {
     display: flex;
     align-items: center;
     margin-top: 140px;
-}
-
-.slick-dots button{
-    padding: 0;
-    border: none;
-    font-size: 0;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: $sub-accent;
-}
-
-.slick-dots li + li {
-    margin-left: 5px;
+    & button{
+        padding: 0;
+        border: none;
+        font-size: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $sub-accent;
+    }
+    & li + li {
+        margin-left: 5px;
+    }
 }
 
 .slick-active button {
@@ -86,15 +82,13 @@ body {
     background-position: center center;
     cursor: pointer;
     transition: 0.5s linear;
-}
-
-.arrow-up.arrow-up--active {
-    bottom: 20px;
-    transition: 0.5s linear;
-}
-
-.arrow-up--active:hover {
-    background-color: #FF8E47;
+    &.arrow-up--active {
+        bottom: 20px;
+        transition: 0.5s linear;
+    }
+    &--active:hover {
+        background-color: #FF8E47;
+    }
 }
 
 .page__wrapper {
@@ -102,3 +96,59 @@ body {
     grid-template-columns: 1fr 350px;
     column-gap: 50px;
 }
+
+/* PAGINATION */
+
+.pagination {
+    display: flex;
+    &__list {
+        display: flex;
+    }
+    &__arrows {
+        color: $title;
+        position: relative;
+        text-transform: uppercase;
+        border: 1px solid #ededed;
+        border-radius: 2px;
+        transition: all .3s;
+        &:hover {
+            border: 1px solid #fc6100;
+        }
+        &-next {
+            padding: 10px 20px 10px 40px;
+            &::after {
+                content: url(../images/icons/ar-left.svg);
+                position: absolute;
+                top: 12px;
+                left: 12px;
+            }
+        }
+        &-prew {
+            padding: 10px 40px 10px 20px;
+            &::before {
+                content: url(../images/icons/ar-right.svg);
+                position: absolute;
+                top: 12px;
+                right: 12px; 
+            }
+        }
+    }
+    &__item {
+        color: $title;
+        border: 1px solid #ededed;
+        border-radius: 2px;
+        margin-left: 5px;
+        padding: 10px 20px;
+        transition: all .3s;
+        cursor: pointer;
+        &:hover {
+            border: 1px solid #fc6100;
+        }
+    }
+}
+
+.pagination__link--active {
+    color: $accent;
+}
+
+

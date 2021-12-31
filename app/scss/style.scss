@@ -260,7 +260,7 @@
         }
     }
     &__content {
-        max-width: 630px;git
+        max-width: 630px;
         &-title {
             margin-bottom: 43px;
         }
@@ -730,10 +730,15 @@
     &__news {
         margin-bottom: 0;
         &-subtitle {
+            display: inline-block;
             color: $sub-accent;
             margin-bottom: 13px;
+            transition: all .3s;
             &:first-child {
                 margin-top: 0;
+            }
+            &:hover {
+                color: $accent;
             }
         }
         &-item {
@@ -808,7 +813,6 @@
 /* PAGE */
 /* BLOG */
 
-
 .blog-page {
     padding: 100px 0;
     &__main-title {
@@ -860,116 +864,91 @@
     }
 }
 
-
-
 /* PAGE */
 /* CONTACT */
 
-
 .contact {
     padding: 100px 0;
+    &__title {
+        margin-bottom: 40px;
+    }
+    &__connection {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__form {
+        flex-basis: 550px;
+        display: inline;
+        &-item {
+            display: block;
+            width: 100%;
+            height: 50px;
+            margin-bottom: 30px;
+            background-color: #ededed;
+            border: none;
+            border-radius: 5px;
+            outline-color: $accent;
+            padding: 15px 15px 15px 50px;
+            &::placeholder {
+                color: $default;
+            }
+            &-name {
+                background-image: url(../images/icons/user.svg);
+                background-repeat: no-repeat;
+                background-position: 20px 17px;
+            }
+            &-email {
+                background-image: url(../images/icons/envelope.svg);
+                background-repeat: no-repeat;
+                background-position: 20px 17px;
+            }
+            &-tem {
+                background-image: url(../images/icons/pen.svg);
+                background-repeat: no-repeat;
+                background-position: 20px 17px;
+            }
+            &:nth-child(3),
+            &:nth-child(4) {
+                display: inline;
+                width: 260px;
+            }
+            &:nth-child(3) {
+                margin-right: 26px;
+            }
+            &-checkbox {
+                margin-bottom: 30px;
+                &-span {
+                    font-size: 13px;
+                    line-height: 20px;
+                    vertical-align: top;
+                    color: $default;
+                }
+            }
+            &-btn {
+                background-color: $accent;
+                color: #FFFFFF;
+                height: 50px;
+                margin-bottom: 0;
+                font-size: 15px;
+                line-height: 46px;
+                cursor: pointer;
+                padding: 0;
+            }
+            &-text {
+                height: 150px;
+                resize: none;
+                background-image: url(../images/icons/commen.svg);
+                background-repeat: no-repeat;
+                background-position: 20px 17px;
+            }
+        }
+    }
 }
-
-.contact__connection {
-    display: flex;
-    justify-content: space-between;
-}
-
-.contact__form {
-    flex-basis: 550px;
-    display: inline;
-}
-
-.contact__form-item {
-    display: block;
-    width: 100%;
-    height: 50px;
-    margin-bottom: 30px;
-    background-color: #ededed;
-    border: none;
-    border-radius: 5px;
-    outline-color: $accent;
-    padding: 15px 15px 15px 50px;
-}
-
-.contact__form-item::placeholder {
-    color: $default;
-}
-
-.contact__form-item-name {
-    background-image: url(../images/icons/user.svg);
-    background-repeat: no-repeat;
-    background-position: 20px 17px;
-}
-
-.contact__form-item-email {
-    background-image: url(../images/icons/envelope.svg);
-    background-repeat: no-repeat;
-    background-position: 20px 17px;
-}
-
-.contact__form-item-tem {
-    background-image: url(../images/icons/pen.svg);
-    background-repeat: no-repeat;
-    background-position: 20px 17px;
-}
-
-.contact__title {
-    margin-bottom: 40px;
-}
-
-.contact__form-item:nth-child(3),
-.contact__form-item:nth-child(4) {
-    display: inline;
-    width: 260px;
-}
-
-.contact__form-item:nth-child(3) {
-    margin-right: 26px;
-}
-
-.contact__form-item-checkbox {
-    margin-bottom: 30px;
-}
-
-.contact__form-item-checkbox-span {
-    font-size: 13px;
-    line-height: 20px;
-    vertical-align: top;
-    color: $default;
-}
-
-.contact__form-item-btn {
-    background-color: $accent;
-    color: #FFFFFF;
-    height: 50px;
-    margin-bottom: 0;
-    font-size: 15px;
-    line-height: 46px;
-    cursor: pointer;
-    padding: 0;
-}
-
-.contact__form-item-text {
-    height: 150px;
-    resize: none;
-    background-image: url(../images/icons/commen.svg);
-    background-repeat: no-repeat;
-    background-position: 20px 17px;
-}
-
-
-
-
-
-
 
 #map {
     height: 550px;
     width: 535px;
     border-radius: 5px;
 }
-
-
 
 @import 'media'; /* медиа-запросы */
