@@ -1,0 +1,112 @@
+@media (max-width: 900px) {
+    .menu {
+        background-color: #fff;
+        border-radius: 5px;
+        position: absolute;
+        z-index: 11;
+        top: 65px;
+        left: 0;
+        transform: translateY(-1000px);
+        &--open {
+            transform: translateY(0);  
+        }
+    }
+    .menu__link {
+        display: block;
+        color: rgb(0, 0, 0);
+        padding: 7px 100px 7px 15px;
+        position: relative;
+        span {
+            position: absolute;
+            top: 8px;
+            right: 20px;
+        }
+
+    }
+    .menu__list {
+        display: block;
+        margin: 10px 0;
+    }
+    .menu__item {
+        margin-left: 0;
+    }
+    .menu__item-home {
+        display: none;
+    }
+    .header__burger-btn {
+        display: block;
+        border: none;
+        border-radius: 5px;
+        background-color: $accent;
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+        cursor: pointer;
+        span {
+            display: block;
+            background-color: #fff;
+            border-radius: 2px;
+            width: 27px;
+            height: 2px;
+            margin: 5px 0;
+        }
+    }
+    .header__menu {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__top-list {
+        flex-direction: column;
+    }
+    .header__top-item + .header__top-item {
+        margin-left: 37px;
+    }
+    .header__top-item {
+        margin-bottom: 15px;
+    }
+    .logo {
+        flex-grow: 0;
+    }
+    .header__info-support {
+        margin-left: 0;
+    }
+    .social__list {
+        margin: 0 30px;
+    } 
+    .header__content-title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 621px) {
+    .header__info {
+        flex-wrap: wrap;
+    }
+    .logo {
+        margin-bottom: 25px;
+    }
+    .header__info-support {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 520px) {
+    .header__content-title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .header__info {
+        flex-wrap: wrap;
+    }
+    .social__list {
+        order: 2;
+        margin: 0;
+    }
+}

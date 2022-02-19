@@ -8,12 +8,11 @@
 /* HEADER */
 
 .header {
-    background-color: #0A1126;
     &-bg {    
         background-image: url(../images/header-bg1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center 60px;
+        background-position: center top;
         min-height: 800px;
     }
     &__top {
@@ -116,6 +115,9 @@
         position: absolute;
         top: 2px;
         left: -35px;
+    }
+    &__burger-btn {
+        display: none;
     }
 }
 

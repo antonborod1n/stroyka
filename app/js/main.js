@@ -13,6 +13,10 @@ $ (function(){
     });
 });
 
+$('.header__burger-btn').on('click', function() {
+    $('.menu').toggleClass('menu--open');
+});
+
 $('.arrow-up').click(function () {
     $('body,html').animate({ scrollTop: 0}, 800);
 });
