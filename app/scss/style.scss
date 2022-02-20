@@ -686,9 +686,18 @@
     }
     &__item {
         margin-bottom: 20px;
+        position: relative;
+        & span {
+            position: absolute;
+            top: 16px;
+            right: 30px;
+            font-size: 20px;
+            color: $default;
+            cursor: pointer;
+        }
     }
     &__title {
-        padding: 15px 25px;
+        padding: 15px 50px 15px 25px;
         background-color: #F8F8F8;
         font-size: 15px;
         line-height: 20px;

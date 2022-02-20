@@ -125,6 +125,7 @@ body {
         }
         &-prew {
             padding: 10px 40px 10px 20px;
+            margin-left: 5px;
             &::before {
                 content: url(../images/icons/ar-right.svg);
                 position: absolute;

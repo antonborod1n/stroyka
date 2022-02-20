@@ -23,16 +23,36 @@
     .progect__text {
         margin: 0 15px 15px 30px;
     }
+    .contact {
+        &__form {
+            &-item {
+                &:nth-child(3),
+                &:nth-child(4) {
+                    width: 100%;
+                }
+            }
+        }
+        &__connection {
+            display: block;
+        }
+        &__map {
+            margin-top: 50px;
+        }
+    }
+    #map {
+        width: 100%;
+    }
 }
 
 @media (max-width: 900px) {
     .menu {
-        background-color: #fff;
+        background-color: #ffffff;
         border-radius: 5px;
         position: absolute;
         z-index: 11;
         top: 65px;
         left: 0;
+        box-shadow: 0 0 20px rgb(5, 5, 5);
         transform: translateY(-1000px);
         &--open {
             transform: translateY(0);  
@@ -47,7 +67,6 @@
                 top: 8px;
                 right: 20px;
             }
-    
         }
         &__list {
             display: block;
@@ -98,7 +117,7 @@
             text-align: center;
         }
     }
-    .progect{
+    .progect {
         &__content {
             grid-template-columns: repeat(2, 1fr);
         }
@@ -124,6 +143,22 @@
     }
     .services__inner {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .sitebar {
+        display: none;
+    }
+    .question__wrapper,
+    .page__wrapper {
+        display: block;
+    }
+    .blog-page__item-img {
+        width: 100%;
+    }
+    .pagination {
+        justify-content: center;
+        &__list {
+            display: none;
+        }
     }
 }
 
@@ -160,17 +195,21 @@
 }
 
 @media (max-width: 622px) {
-    .header__info {
-        flex-wrap: wrap;
+    .header {
+        &__info {
+            flex-wrap: wrap;
+            &-support {
+                margin-bottom: 25px;
+            }
+        }
     }
     .logo {
         margin-bottom: 25px;
     }
-    .header__info-support {
-        margin-bottom: 25px;
-    }
-    .footer__list {
-        margin-top: 30px;
+    .footer {
+        &__list {
+            margin-top: 30px;
+        }
     }
     .progect{
         &__content {
