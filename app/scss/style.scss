@@ -313,11 +313,13 @@
 .benefits {
     background: url(../images/dark-bg.jpg) top center fixed;
     background-size: cover;
-    max-height: 376px;
+    min-height: 376px;
     padding: 100px 0;
     &__inner {
-        display: flex;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 60px;
+        
     }
     &__item {
         display: flex;
@@ -342,6 +344,7 @@
         font-size: 15px;
         line-height: 20px;
         color: #FFFFFF;
+        text-align: center;
     }
 }
 
@@ -488,8 +491,9 @@
         text-align: center;
     }
     &__inner {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
     }
     &__items {
         max-width: 370px;
