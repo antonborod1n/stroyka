@@ -13,4 +13,36 @@ $ (function(){
     });
 });
 
+$('.header__burger-btn').on('click', function() {
+    $('.menu').toggleClass('menu--open');
+});
+
+$('.arrow-up').click(function () {
+    $('body,html').animate({ scrollTop: 0}, 800);
+});
+
+$(window).scroll(function() {
+    let scrolled = $(window).scrollTop();
+
+    if(scrolled > 350) {
+        $('.arrow-up').addClass('arrow-up--active');
+    } else {
+        $('.arrow-up').removeClass('arrow-up--active');
+    }
+});
+
+$(document).ready(function() {
+    $('.question__title').click(function(event) {
+        if($('.question__inner').hasClass('question__one')){
+            $('.question__title').not($(this)).removeClass('active');
+            $('.question__text').not($(this).next()).slideUp(200);
+        }
+        $(this).toggleClass('active').next().slideToggle(200);
+    });
+});
+
+
+
+
+
 

@@ -1,0 +1,269 @@
+
+@media (max-width: 1140px) {
+    .expiriens {
+        &__inner {
+            display: block;
+        }
+        &__content {
+            max-width: 100%;
+        }
+        &__img {
+            display: none;
+        }
+    }
+    .benefits {
+        &__inner {
+            grid-template-columns: repeat(2, 1fr);  
+        }
+        &__item {
+            padding-right: 0;
+            border-right: none;
+        }  
+    }
+    .progect__text {
+        margin: 0 15px 15px 30px;
+    }
+    .contact {
+        &__form {
+            &-item {
+                &:nth-child(3),
+                &:nth-child(4) {
+                    width: 100%;
+                }
+            }
+        }
+        &__connection {
+            display: block;
+        }
+        &__map {
+            margin-top: 50px;
+        }
+    }
+    #map {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .menu {
+        background-color: #ffffff;
+        border-radius: 5px;
+        position: absolute;
+        z-index: 11;
+        top: 65px;
+        left: 0;
+        box-shadow: 0 0 20px rgb(5, 5, 5);
+        transform: translateY(-1000px);
+        &--open {
+            transform: translateY(0);  
+        }
+        &__link {
+            display: block;
+            color: rgb(0, 0, 0);
+            padding: 7px 100px 7px 15px;
+            position: relative;
+            span {
+                position: absolute;
+                top: 8px;
+                right: 20px;
+            }
+        }
+        &__list {
+            display: block;
+            margin: 10px 0;
+        }
+        &__item {
+            margin-left: 0;
+            &-home {
+                display: none;
+            }
+        }
+    }
+    .header {
+        &__burger-btn {
+            display: block;
+            border: none;
+            border-radius: 5px;
+            background-color: $accent;
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+            cursor: pointer;
+            span {
+                display: block;
+                background-color: #fff;
+                border-radius: 2px;
+                width: 27px;
+                height: 2px;
+                margin: 5px 0;
+            }
+        }
+        &__menu {
+            padding: 10px 0;
+        }
+    }
+    .footer {
+        &__top {
+            flex-wrap: wrap;
+            padding: 100px 0 50px;
+        }
+        &__list {
+            margin: 0 37px;
+        }
+        &__social-box {
+            margin-top: 30px;
+        }
+        &__bottom {
+            text-align: center;
+        }
+    }
+    .progect {
+        &__content {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__img {
+            width: 100%;
+        }
+        &__item {
+            padding-bottom: 20px;
+        }
+    }
+    .slick-prev,
+    .slick-next {
+        top: 80%;
+    }
+    .blog {
+        &__inner {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &__items {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    .services__inner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sitebar {
+        display: none;
+    }
+    .question__wrapper,
+    .page__wrapper {
+        display: block;
+    }
+    .blog-page__item-img {
+        width: 100%;
+    }
+    .pagination {
+        justify-content: center;
+        &__list {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header__top-list {
+        flex-direction: column;
+    }
+    .header__top-item + .header__top-item {
+        margin-left: 37px;
+    }
+    .header__top-item {
+        margin-bottom: 15px;
+    }
+    .logo {
+        flex-grow: 0;
+    }
+    .header__info-support {
+        margin-left: 0;
+    }
+    .social__list {
+        margin: 0 30px;
+    } 
+    .header__content-title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .reviews__text {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .header__page-bg {
+        padding: 0 0 20px 0;
+    }
+}
+
+@media (max-width: 622px) {
+    .header {
+        &__info {
+            flex-wrap: wrap;
+            &-support {
+                margin-bottom: 25px;
+            }
+        }
+    }
+    .logo {
+        margin-bottom: 25px;
+    }
+    .footer {
+        &__list {
+            margin-top: 30px;
+        }
+    }
+    .progect{
+        &__content {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+        }
+        &__item {
+            grid-column-start: 1;
+            grid-row-start: 1;
+        }
+        &__text {
+            margin: 0 15px 15px 30px;
+        }
+    }
+    .blog {
+        &__inner {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &__items {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    .services__inner {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 520px) {
+    .header__content-title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .expiriens__content-list {
+        column-count: 1;
+    }
+}
+
+@media (max-width: 450px) {
+    .header__info {
+        flex-wrap: wrap;
+    }
+    .social__list {
+        order: 2;
+        margin: 0;
+    }
+    .title {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .benefits {
+        &__inner {
+            grid-template-columns: repeat(1, 1fr);  
+        }
+    }
+}
