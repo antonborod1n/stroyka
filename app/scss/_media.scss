@@ -115,8 +115,15 @@
     }
     .blog {
         &__inner {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(1, 1fr);
         }
+        &__items {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    .services__inner {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -146,6 +153,9 @@
     .reviews__text {
         font-size: 16px;
         line-height: 26px;
+    }
+    .header__page-bg {
+        padding: 0 0 20px 0;
     }
 }
 
@@ -183,6 +193,10 @@
             width: 100%;
             max-width: 100%;
         }
+    }
+    .services__inner {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
     }
 }
 
